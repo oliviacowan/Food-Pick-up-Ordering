@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-
+console.log('git')
 
 module.exports = db => {
   router.get("/", (req, res) => {
