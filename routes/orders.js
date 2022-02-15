@@ -2,7 +2,8 @@ const express = require('express');
 const router  = express.Router();
 console.log('git')
 
-module.exports = db => {
+
+module.exports = (db) => {
   router.get("/", (req, res) => {
 
     let query = `SELECT dishes.title, dishes.cost, dishes.duration,
